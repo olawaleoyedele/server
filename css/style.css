@@ -226,7 +226,7 @@ h2 {
     cursor: pointer;
   }
 
-  @media only screen and (min-width: 650px) {
+/*   @media only screen and (min-width: 650px) {
 
     .server {
       width: 50%;
@@ -274,7 +274,7 @@ h2 {
       width: 40%;
     }
 
-  }
+  } */
 
   @media only screen and (min-width: 875px) {
 
