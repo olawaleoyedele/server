@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Front-End Dev</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img class="logo" src="images/logo.svg" alt="frontend-logo">
+
+      <nav>
+        <a href="#" class="hide-desktop">
+          <img src="images/ham.svg" alt="toggle-menu" class="menu" id="menu">
+        </a>
+
+        <ul class="show-desktop hide-mobile" id="nav">
+          <li class="exit-btn hide-desktop" id="exit">
+            <img src="images/exit.svg" alt="exit menu">
+          </li>
+          <li><a href="#">home</a></li>
+          <li><a href="#">service</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <img class="server" src="images/server.svg" alt="server-image">
+
+      <h1>Web Hosting for the Modern Era</h1>
+      <p class="subhead">Go serverless and pay only for what you use.</p>
+
+      <img class="scroll hide-mobile show-desktop" src="images/scroll.svg" alt="scroll">
+    </section>
+  </div>
+
+  <div class="blue-container">
+    <div class="container">
+      <ul>
+        <li>
+          <img src="images/icon-1.svg" alt="calender icon">
+          <p>Lorem isum dolor osit ags, consent ate heh. Readt to go home and eat.</p>
+        </li>
+
+        <li>
+          <img src="images/icon-2.svg" alt="calender icon">
+          <p>Lorem isum dolor osit ags, consent ate heh. Readt to go home and eat.</p>
+        </li>
+
+        <li>
+          <img src="images/icon-3.svg" alt="calender icon">
+          <p>Lorem isum dolor osit ags, consent ate heh. Readt to go home and eat.</p>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="gray-container">
+    <div class="container">
+      <ul>
+        <li>
+          <img src="images/user1.png" alt="user1">
+          <blockquote>Lorem isum dolor osit ags, consent ate heh. Readt to go home and eat.</blockquote>
+          <figcaption>Jane Doe</figcaption>
+        </li>
+
+        <li>
+          <img src="images/user2.png" alt="user1">
+          <blockquote>Lorem isum dolor osit ags, consent ate heh. Readt to go home and eat.</blockquote>
+          <figcaption>John Mike</figcaption>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Start your free trial now!</h2>
+    <a href="#" class="cta">Get Started</a>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="container">
+        <a href="#"><img src="images/logo-white.svg" alt="logo" class="logo"></a>
+        <p class="address">Aguiyi Ironsi Way, Maitama<br> Abuja</p>
+        <ul class="footer-links">
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var menu = document.getElementById("menu");
+    var nav = document.getElementById("nav");
+    var exit = document.getElementById("exit")
+
+    menu.addEventListener("click", function(e) {
+      nav.classList.toggle("hide-mobile");
+      e.preventDefault();
+    });
+
+    exit.addEventListener("click", function(e) {
+      nav.classList.add("hide-mobile");
+      e.preventDefault();
+    });
+  </script>
+
+</body>
+
+</html>
